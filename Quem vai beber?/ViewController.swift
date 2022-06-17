@@ -8,14 +8,25 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var listPlayers: [String] = []
 
+    
     @IBOutlet weak var textField: UITextField!
     @IBAction func playButton(_ sender: Any) {
         
-        print("botao play" + textField.text! )
+        
+        if (!textField.text!.isEmpty){
+            listPlayers.append(textField.text!)
+            textField.text = ""
+        }
+        print("lista" , listPlayers)
+        
+        
     }
     @IBAction func resetPlayers(_ sender: Any) {
-        print("botao reset")
+        let chosen = arc4random_uniform(UInt32(listPlayers.count))
+        print("sortudo", listPlayers[Int(chosen)])
 
     }
     

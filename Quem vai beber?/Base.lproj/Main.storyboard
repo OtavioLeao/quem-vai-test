@@ -16,28 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vYA-zD-fS2">
-                                <rect key="frame" x="92" y="316" width="190" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vYA-zD-fS2">
+                                <rect key="frame" x="92" y="289" width="190" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBN-Q4-Mzj">
-                                <rect key="frame" x="92" y="602" width="190" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="test2">
-                                    <backgroundConfiguration key="background" cornerRadius="16">
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                    </backgroundConfiguration>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="resetPlayers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k7q-WE-AVO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0o-JU-jTC">
-                                <rect key="frame" x="92" y="551" width="190" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0o-JU-jTC">
+                                <rect key="frame" x="92" y="339" width="190" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Test">
                                     <backgroundConfiguration key="background" cornerRadius="16">
@@ -49,9 +34,42 @@
                                     <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3tp-F2-Kj9"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eNX-vr-VDm">
+                                <rect key="frame" x="0.0" y="416" width="375" height="251"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="251" id="oUg-l5-nzn"/>
+                                </constraints>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBN-Q4-Mzj">
+                                <rect key="frame" x="92" y="378" width="190" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="test2">
+                                    <backgroundConfiguration key="background" cornerRadius="16">
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetPlayers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k7q-WE-AVO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="H0o-JU-jTC" firstAttribute="top" secondItem="vYA-zD-fS2" secondAttribute="bottom" constant="16" id="0Xp-cw-Ya5"/>
+                            <constraint firstItem="bBN-Q4-Mzj" firstAttribute="top" secondItem="H0o-JU-jTC" secondAttribute="bottom" constant="8" id="12O-3g-uE3"/>
+                            <constraint firstItem="eNX-vr-VDm" firstAttribute="centerX" secondItem="vYA-zD-fS2" secondAttribute="centerX" id="4UX-Gl-wsM"/>
+                            <constraint firstItem="H0o-JU-jTC" firstAttribute="trailing" secondItem="bBN-Q4-Mzj" secondAttribute="trailing" id="7CP-Io-SD4"/>
+                            <constraint firstItem="H0o-JU-jTC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="GOL-dw-Bu2"/>
+                            <constraint firstItem="eNX-vr-VDm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N4A-JG-bRY"/>
+                            <constraint firstItem="eNX-vr-VDm" firstAttribute="centerX" secondItem="bBN-Q4-Mzj" secondAttribute="centerX" id="Ukl-Rb-U9r"/>
+                            <constraint firstItem="H0o-JU-jTC" firstAttribute="leading" secondItem="bBN-Q4-Mzj" secondAttribute="leading" id="b8Q-Ga-NZF"/>
+                            <constraint firstItem="H0o-JU-jTC" firstAttribute="leading" secondItem="vYA-zD-fS2" secondAttribute="leading" id="fi0-pd-Y4f"/>
+                            <constraint firstItem="eNX-vr-VDm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pwO-dc-iHd"/>
+                            <constraint firstItem="eNX-vr-VDm" firstAttribute="top" secondItem="bBN-Q4-Mzj" secondAttribute="bottom" constant="7" id="rTF-oI-T27"/>
+                            <constraint firstItem="eNX-vr-VDm" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="sNp-wR-Cqo"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="textField" destination="vYA-zD-fS2" id="UQ3-ZR-tRw"/>
@@ -63,6 +81,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
