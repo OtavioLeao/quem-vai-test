@@ -13,6 +13,7 @@
 		A55B5888285938E400AC65D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55B5886285938E400AC65D9 /* Main.storyboard */; };
 		A55B588A285938E700AC65D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55B5889285938E700AC65D9 /* Assets.xcassets */; };
 		A55B588D285938E700AC65D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55B588B285938E700AC65D9 /* LaunchScreen.storyboard */; };
+		A55B58952860EE4D00AC65D9 /* SorteadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B58942860EE4C00AC65D9 /* SorteadoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A55B5889285938E700AC65D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A55B588C285938E700AC65D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A55B588E285938E700AC65D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A55B58942860EE4C00AC65D9 /* SorteadoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SorteadoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				A55B5880285938E400AC65D9 /* AppDelegate.swift */,
 				A55B5882285938E400AC65D9 /* SceneDelegate.swift */,
+				A55B58942860EE4C00AC65D9 /* SorteadoViewController.swift */,
 				A55B5884285938E400AC65D9 /* ViewController.swift */,
 				A55B5886285938E400AC65D9 /* Main.storyboard */,
 				A55B5889285938E700AC65D9 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 				A55B5885285938E400AC65D9 /* ViewController.swift in Sources */,
 				A55B5881285938E400AC65D9 /* AppDelegate.swift in Sources */,
 				A55B5883285938E400AC65D9 /* SceneDelegate.swift in Sources */,
+				A55B58952860EE4D00AC65D9 /* SorteadoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
